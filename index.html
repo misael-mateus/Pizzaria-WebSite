@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>MammaMya</title>
+    <link rel="shortcut icon" href="Imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+    <!-----------------------
+     navegação hamburquer
+    ------------------------>
+    <nav class="navbar navbar-expand-md navbar-dark space-nav nav_principal">
+
+        <!-- Logo -->
+        <p class="nav_p nav_logo"><img src="Imagens/stevepizza_png.png" alt="steve pizza" class="steve_pizza"><a
+                href="index.html" class="a_logo">MammaMya Pizza</a></p>
+
+        <!-- Menu Hamburguer -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacao"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navegacao -->
+        <div class="collapse navbar-collapse links_header" id="navegacao">
+            <ul class="navbar-nav ml-auto d-flex mr-auto justify-content-center align-items-center flex-row">
+                <li class="nav-item">
+                    <a href="html/pizzas.html" class="nav-link text-light">Cardapio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.google.com/maps/place/Universidade+Federal+de+Mato+Grosso+Do+Sul+-+C%C3%A2mpus+de+Coxim/@-18.4861304,-54.7568113,17z/data=!4m5!3m4!1s0x937e3512d88be7b7:0x2cfe7516643d1225!8m2!3d-18.4859523!4d-54.7551269"
+                       class="nav-link text-light" target="_blank">Localização</a>
+                </li>
+                <!------------------------------------------
+                              POP UP contatos
+                -------------------------------------------->
+                <li class="nav-item">
+                    <!-- Botão para acionar modal -->
+                    <button type="button" class="btn text-white btn_contatos" data-toggle="modal"
+                            data-target="#ExemploModalCentralizado">
+                        Contatos
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
+                         aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered " role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="TituloModalCentralizado">Contatos</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex flex-column align-items-center">
+                                    <!-- conteudo principal do POP -->
+                                    <div class="footer_sociais">
+                                        <a href="https://www.instagram.com" class="text-decoration-none">
+                                            <img src="icones/instagram_black.png" alt="instagram"
+                                                 class="icons_pop_social">
+                                        </a>
+                                        <a href="https://www.whatsapp.com/?lang=pt_br" class="text-decoration-none">
+                                            <img src="icones/whatsapp_preto.png" alt="whatsapp"
+                                                 class="icons_pop_social">
+                                        </a>
+                                        <a href="https://twitter.com" class="text-decoration-none"> <img
+                                                src="icones/twitter_blaack.png" alt="twitter" class="icons_pop_social">
+                                        </a>
+                                        <img src="icones/telefone_blaack.png" class="icons_pop_social"
+                                             data-container="body" data-toggle="popover" data-placement="bottom"
+                                             data-content="+55 67 99999-9999">
+                                    </div>
+                                    <p class="text-dark p_footer">MammaMya Pizza</p>
+
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="d-flex flex-column align-items-center phone">
+                <p class="nav_telefone">Telefone</p>
+                <p class="nav_num_telefone">+55 (67) 99999-9999</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center">
+        <a href="html/pizzas.html" class="d-flex align-items-center org_icons_menu">
+            <img src="Imagens/ico_png.png" alt="pizza png" class="icon_foods">
+            <p>Pizza</p>
+        </a>
+        <a href="html/fritas.html" class="d-flex align-items-center org_icons_menu">
+            <img src="Imagens/fries_png.png" alt="fries" class="icon_foods_fries">
+            <p>Batata frita</p>
+        </a>
+        <a href="html/drinks.html" class="d-flex align-items-center org_icons_menu">
+            <img src="Imagens/white_drink.png" alt="bebedas" class="icon_foods">
+            <p>Bebidas</p>
+        </a>
+    </div>
+    <!-- icones: https://flaticons.net/search.php?search=food -->
+    <!-----------------------
+    fim navegação hamburquer
+    ------------------------->
+</header>
+
+<main>
+    <!-- carousel -->
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Imagens/img-carousel/pizza_slide_1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-flex justify-content-center align-items-center">
+                    <label class="txt_corousel txt_corousel_01 subir-margin-carousel">Pizza tradicional<p
+                            class="p1_carousel">Italiana!</p></label>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Imagens/img-carousel/pizza_slide_2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-flex justify-content-center align-items-center">
+                    <label class="txt_corousel subir-margin-carousel"> Pizza para familia</label>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Imagens/img-carousel/pizza_slide_3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-flex justify-content-center align-items-center">
+                    <label class="txt_corousel subir-margin-carousel"> Pizza Calabresa</label>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Imagens/img-carousel/pizza_slide_4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-flex justify-content-center align-items-center">
+                    <label class="txt_corousel subir-margin-carousel"> Pizza <p
+                            class="p1_carousel">ou Lasanha?</p></label>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</main>
+
+<div class="box_principal d-flex justify-content-center align-items-center">
+
+    <div class="img_box1 hover1-1 justify-content-center align-items-end">
+        <a href="html/pizzas.html" class="display_none_471">
+            <button class="order-now order_now_small">Ver no cardapio</button>
+        </a>
+    </div>
+
+    <div class="d-flex box_02 flex-wrap segundo_box">
+
+        <div class="img_box2 hover1-1 d-flex justify-content-center align-items-end">
+            <a href="html/pizzas.html">
+                <button class="order-now order_now_smaller">Ver no cardapio</button>
+            </a>
+        </div>
+        <div class="img_box3 hover1-1 d-flex justify-content-center align-items-end">
+            <a href="html/pizzas.html">
+                <button class="order-now order_now_smaller">Ver no cardapio</button>
+            </a>
+        </div>
+        <div class="img_box4 hover1-1 d-flex justify-content-center align-items-end">
+            <a href="html/pizzas.html">
+                <button class="order-now order_now_small">Ver no cardapio</button>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+<section class="section-p d-flex flex-column align-items-center justify-content-center">
+    <div class="p-0"><p>FREE DELIVERY WITH</p></div>
+    <div class="p-1">PIZZA OF THE DAY</div>
+    <div class="p-2"><p>R$9,99</p> CHEDDAR, FRANGO COM CATUPIRY,
+        M & M
+    </div>
+
+    <div class="">
+        <button class="order-now">Peça Agora</button>
+    </div>
+</section>
+
+
+<h2 class="part_5_h2">Famosinhas da Casa</h2>
+<hr class="hr_style">
+
+<div class="d-flex justify-content-center">
+    <div class="card-deck m-5 card_style">
+        <div class="card">
+            <img class="card-img-top" src="Imagens/pizzaum.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi optio placeat quos
+                    sapiente ut voluptate, voluptatibus! Adipisci assumenda, commodi doloribus illum mollitia
+                    voluptatibus. Itaque laudantium minima neque placeat, quibusdam voluptates.</p>
+                <a href="#" class="btn btn-danger">Visitar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="Imagens/pizzaquatro.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam, assumenda
+                    commodi dicta eaque enim fugiat hic impedit ipsa iste magni maxime nemo, perspiciatis quasi quod
+                    recusandae soluta, suscipit voluptate!</p>
+                <a href="#" class="btn btn-danger">Visitar</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="Imagens/pizzadois.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, amet animi ducimus est
+                    et incidunt, maxime, minus modi obcaecati odit provident quis recusandae sequi sint soluta tenetur
+                    totam vel veniam.</p>
+                <a href="#" class="btn btn-danger ">Visitar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section-s d-flex flex-column align-items-center justify-content-center">
+    <div class="p-3">Pepperoni Pizza</div>
+    <div class="p-4">Calabresa, Portuguesa, Milho, Mussarela,
+        Chocolate, Chocolate com Banana
+    </div>
+
+    <button class="select-options">Selecionar Opções</button>
+</section>
+
+
+<ul class="nav nav-pills mb-3 justify-content-center m-5" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active btn-danger text-dark" id="pills-pizza-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-pizza" type="button" role="tab" aria-controls="pills-pizza" aria-selected="true">
+            Pizza
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link text-dark btn-danger" id="pills-fritas-tab " data-bs-toggle="pill"
+                data-bs-target="#pills-fritas"
+                type="button" role="tab" aria-controls="pills-fritas" aria-selected="false">Fritas
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link text-dark btn-danger" id="pills-drinks-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-drinks"
+                type="button" role="tab" aria-controls="pills-drinks" aria-selected="false">Drinks
+        </button>
+    </li>
+    <li class="nav-item text-dark" role="presentation">
+        <button class="nav-link text-dark btn-danger" id="pills-combos-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-combos"
+                type="button" role="tab" aria-controls="pills-combos" aria-selected="false">Combos
+        </button>
+    </li>
+</ul>
+<div class="tab-content d-flex justify-content-center " id="pills-tabContent">
+    <div class="tab-pane fade show active img-tabs" id="pills-pizza" role="tabpanel" aria-labelledby="pills-pizza-tab">
+        <img class="img-fluid rounded" src="Imagens/pizzaum.jpg" alt="pizza">
+        <img class="img-fluid rounded" src="Imagens/pizzadois.jpg" alt="pizza">
+        <img class="img-fluid rounded" src="Imagens/pizzaquatro.jpg" alt="">
+    </div>
+    <div class="tab-pane fade img-tabs" id="pills-fritas" role="tabpanel" aria-labelledby="pills-fritas-tab">
+        <img class="img-fluid rounded" src="Imagens/batatafritapepper.jpg" alt="fritas">
+        <img class="img-fluid rounded" src="Imagens/batatafritaquatro.jpg" alt="Batata">
+        <img class="img-fluid rounded" src="Imagens/batatafritatres.jpg" alt="">
+    </div>
+    <div class="tab-pane fade img-tabs" id="pills-drinks" role="tabpanel" aria-labelledby="pills-drinks-tab">
+        <img class="img-fluid rounded" src="Imagens/coca-cola.jpg" alt="drink">
+        <img class="img-fluid rounded" src="Imagens/suco.jpg" alt="">
+        <img class="img-fluid rounded" src="Imagens/fanta.jpg" alt="">
+    </div>
+    <div class="tab-pane fade img-tabs" id="pills-combos" role="tabpanel" aria-labelledby="pills-combos-tab">
+        <img class="img-fluid rounded" src="Imagens/tudo].jpg" alt="combo">
+    </div>
+</div>
+
+
+<footer class="d-flex justify-content-center align-items-center flex-column">
+
+    <div class="footer_sociais">
+        <a href="#" class="text-decoration-none">
+            <img src="Imagens/white-instagram.png" alt="instagram" class="icons_footer_social">
+        </a>
+        <a href="#" class="text-decoration-none">
+            <img src="Imagens/whatsapp_png.png.opdownload" alt="whatsapp" class="icons_footer_social">
+        </a>
+        <a href="#" class="text-decoration-none"> <img src="Imagens/twitter-icon-svg-28.jpg" alt="twitter"
+                                                       class="icons_footer_social">
+        </a>
+        <a href="#" class="text-decoration-none">
+            <img src="Imagens/telefone_branco.png" alt="Telefone" class="icons_footer_social">
+        </a>
+        <img src="" alt="" class="icons_footer_social">
+    </div>
+    <p class="text-white p_footer">MammaMya Pizza</p>
+    <a href="https://www.google.com/maps/place/Valparaíso+de+Goiás,+GO/@-16.0898164,-48.0200443,13z/data=!3m1!4b1!4m5!3m4!1s0x9359847212701563:0x4215e06987627415!8m2!3d-16.0753576!4d-47.9860661"
+       class="find_me" target="_blank">Como chegar
+    </a>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
