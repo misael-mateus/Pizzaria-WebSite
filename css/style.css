@@ -31,9 +31,6 @@ header{
     color: white;
 }
 
-.nav_principal{
-    padding: 0px;
-}
 .nav_li{
     padding: 10px 15px;
 
@@ -80,7 +77,7 @@ header{
 }
 
 .subir-margin-carousel{
-    margin-bottom: 7em;
+    margin-bottom: 20em;
 }
 
 .carousel-item{
@@ -517,7 +514,7 @@ footer {
 /************************ MEDIA QUERY ************************/
 
 @media (max-width:768px) {
-    
+
     .phone{
         display: none !important;
     }
@@ -532,13 +529,13 @@ footer {
         width: 60px;
         height: 60px;
         margin: 0px 10px 30px 10px;
-    } 
-    
+    }
+
     .icon_foods_fries{
         width: 40px;
-        margin: 0px 15px 25px 15px;   
+        margin: 0px 15px 25px 15px;
     }
-} 
+}
 @media (max-width:500px) {
     .p_footer{
         font-size: 2em;
@@ -557,10 +554,7 @@ footer {
         min-height: 100px;
         padding-top: 0px;
     }
-    .nav_principal{
-        min-height: 105px;
-    }
-} 
+}
 @media (max-width:550px){
     .steve_pizza{
         width: 60px;
@@ -575,12 +569,12 @@ footer {
         width: 40px;
         height: 40px;
         margin: 0px 10px 30px 10px;
-    } 
-    
+    }
+
     .icon_foods_fries{
         width: 30px;
-        margin: 0px 15px 25px 15px;   
-    } 
+        margin: 0px 15px 25px 15px;
+    }
 }
 @media(max-width: 670px) {
     .product-title{
@@ -593,9 +587,9 @@ footer {
     }
     .products-container{
         max-width: 350px;
-        
+
     }
-    
+
     .img-in-cart{
         width: 80px;
         border-radius: 10px;
@@ -605,7 +599,7 @@ footer {
         align-items: center;
         flex-wrap: nowrap;
         width: 100%;
-        
+
     }
     .product {
         padding: 10px 5px 10px 0px;
@@ -627,7 +621,7 @@ footer {
     }
     .basketTotalTitle {
         font-size: 20px;
-        
+
     }
     .basketTotal {
         width: 30%;
@@ -670,7 +664,7 @@ footer {
     }
     .box_principal{
         margin: auto;
-        
+
     }
     .img_box1{
         display: none;
@@ -714,12 +708,12 @@ footer {
         width: 40px;
         height: 40px;
         margin: 0px 0px 0px 10px;
-    } 
-    
+    }
+
     .icon_foods_fries{
         width: 30px;
-        margin: 0px 15px 0px 15px;   
-    } 
+        margin: 0px 15px 0px 15px;
+    }
     .org_icons_menu{
         flex-direction: column;
         margin: 0px 20px;
@@ -734,10 +728,6 @@ footer {
     .nav_logo{
         top: 30px;
         left: 50px;
-    }
-    .nav_principal{
-        padding: 0px;
-        margin-bottom: -20px;
     }
 }
 @media (min-width: 470px){
