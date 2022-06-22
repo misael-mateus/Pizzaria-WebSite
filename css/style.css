@@ -7,12 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Fredericka+the+Great&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 body{
-    display: flex;
-    flex-direction: column;
     min-height: 100%;
 }
 
@@ -29,6 +27,10 @@ a:hover{
 header{
     background-color: #c00a28;
     color: white;
+}
+
+.navegacao-margim{
+    margin-left: 8em;
 }
 
 .nav_li{
@@ -107,7 +109,7 @@ header{
 
 .nav_telefone{
     font-size: 1.2em;
-    margin: 0px ;
+    margin: 0;
     padding-top: 10px;
 }
 .nav_num_telefone{
@@ -115,11 +117,10 @@ header{
     font-weight: 500;
     font-family: 'PT Serif', serif;
 }
-.phone{
-    margin: 0px 50px 0px 10px;
+
+.nav-link.active{
+ background-color: #c00a28 !important;
 }
-
-
 
 footer {
     background-color: #2C2C2C;
@@ -134,11 +135,11 @@ footer {
 
 .icons_pop_social{
     width: 40px;
-    margin: 40px 0px 40px 35px;
+    margin: 40px 0 40px 35px;
 }
 .icons_footer_social{
     width: 40px;
-    margin: 80px 0px 40px 35px;
+    margin: 80px 0 40px 35px;
 }
 .hover1-1:hover{
     transform: scale(1.02);
@@ -226,11 +227,6 @@ footer {
 
     position: absolute;
 
-}
-.sobrecao_1{
-    background: url(../Imagens/parallaxpizza.jpg);
-    height: 100px;
-    position: relative;
 }
 
 .section-p {
@@ -426,114 +422,30 @@ footer {
     padding: 5px;
     z-index: 990;
 }
-.num_cart{
-    background-color: #c00a28;
-    min-width: 20px;
-    min-height: 20px;
-    position: fixed !important;
-    right: 64px;
-    bottom: 100px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 0px;
-    z-index: 1000;
-}
 #btn_feedback:hover{
     transform: scale(1.1);
 }
-/*--------------- cart --------------- */
-
-.org-cart{
-    display: flex;
-    justify-content: space-around;
-    margin: 5px;
-}
-.img-in-cart{
-    width: 150px;
-    border-radius: 10px;
-}
-.product-header{
-    border-bottom: solid 2px rgba(128, 128, 128, 0.295);
-}
-.products-container{
-    width: 650px;
-    justify-content: space-around;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-.product-title{
-    margin-right: 70px;
-    margin-left: 38px;
-}
-.trash-cart{
-    width: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-.count{
-    width: 20px;
-}
-
-.product {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-}
-
-.basketTotalContainer {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 10px 5px;
-}
-.basketTotal {
-    width: 20%;
-}
-.price {
-    display: flex;
-    align-items: center;
-}
-.quantity {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.total {
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-}
-.name-org-cart{
-    text-align: center;
-}
-
-
 
 /************************ MEDIA QUERY ************************/
 
 @media (max-width:768px) {
 
-    .phone{
-        display: none !important;
-    }
     .nav-item{
         margin: 5px 20px 15px 20px;
     }
     .btn_contatos{
-        padding: 0px;
+        padding: 0;
     }
 
     .icon_foods{
         width: 60px;
         height: 60px;
-        margin: 0px 10px 30px 10px;
+        margin: 0 10px 30px 10px;
     }
 
     .icon_foods_fries{
         width: 40px;
-        margin: 0px 15px 25px 15px;
+        margin: 0 15px 25px 15px;
     }
 }
 @media (max-width:500px) {
@@ -544,8 +456,8 @@ footer {
 @media (max-width:870px) {
     .nav_logo{
         font-size: 1.3em;
-        left: 0px;
-        padding: 10px 0px 0px 20px;
+        left: 0;
+        padding: 10px 0 0 20px;
     }
     .steve_pizza{
         width: 70px;
@@ -576,58 +488,7 @@ footer {
         margin: 0px 15px 25px 15px;
     }
 }
-@media(max-width: 670px) {
-    .product-title{
-        margin-right: 16px;
-        margin-left: 52px;
-    }
-    .product-header{
-        max-width: 350px !important;
-        justify-content: center !important;
-    }
-    .products-container{
-        max-width: 350px;
 
-    }
-
-    .img-in-cart{
-        width: 80px;
-        border-radius: 10px;
-    }
-    .price {
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap;
-        width: 100%;
-
-    }
-    .product {
-        padding: 10px 5px 10px 0px;
-    }
-    .table-price{
-        margin-right: 20px;
-        margin-left: 10px;
-    }
-    .total {
-        margin-left: 15px;
-    }
-    .quantity {
-        position: relative;
-        right:15px;
-    }
-    .name-org-cart{
-        font-size: 12px;
-        text-align: center;
-    }
-    .basketTotalTitle {
-        font-size: 20px;
-
-    }
-    .basketTotal {
-        width: 30%;
-        font-size: 20px !important;
-    }
-}
 @media (max-width: 1046px) {
 
     .box_principal{
@@ -681,10 +542,8 @@ footer {
 
     }
     .img_box4{
-        margin: auto;
         width: 90% !important;
         height: 200px !important;
-        margin: 5px auto 100px auto!important;
     }
     .box_02{
         width: auto;

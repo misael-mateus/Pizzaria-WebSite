@@ -30,7 +30,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- navegacao -->
-        <div class="collapse navbar-collapse links_header justify-content-between ms-5" id="navegacao">
+        <div class="collapse navbar-collapse links_header navegacao-margim" id="navegacao">
             <ul class="navbar-nav ml-auto d-flex mr-auto justify-content-center align-items-center flex-row">
                 <li class="nav-item">
                     <a href="html/pizzas.html" class="nav-link text-light">Cardapio</a>
@@ -39,61 +39,52 @@
                     <a href="https://www.google.com/maps/place/Universidade+Federal+de+Mato+Grosso+Do+Sul+-+C%C3%A2mpus+de+Coxim/@-18.4861304,-54.7568113,17z/data=!4m5!3m4!1s0x937e3512d88be7b7:0x2cfe7516643d1225!8m2!3d-18.4859523!4d-54.7551269"
                        class="nav-link text-light" target="_blank">Localização</a>
                 </li>
-                <!------------------------------------------
-                              POP UP contatos
-                -------------------------------------------->
-                <li class="nav-item">
-                    <!-- Botão para acionar modal -->
-                    <button type="button" class="btn text-white btn_contatos" data-toggle="modal"
-                            data-target="#ExemploModalCentralizado">
-                        Contatos
-                    </button>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog"
-                         aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered " role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title text-dark" id="TituloModalCentralizado">Contatos</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body d-flex flex-column align-items-center">
-                                    <!-- conteudo principal do POP -->
-                                    <div class="footer_sociais">
-                                        <a href="https://www.instagram.com" class="text-decoration-none">
-                                            <img src="icones/instagram_black.png" alt="instagram"
-                                                 class="icons_pop_social">
-                                        </a>
-                                        <a href="https://www.whatsapp.com/?lang=pt_br" class="text-decoration-none">
-                                            <img src="icones/whatsapp_preto.png" alt="whatsapp"
-                                                 class="icons_pop_social">
-                                        </a>
-                                        <a href="https://twitter.com" class="text-decoration-none"> <img
-                                                src="icones/twitter_blaack.png" alt="twitter" class="icons_pop_social">
-                                        </a>
-                                        <img src="icones/telefone_blaack.png" class="icons_pop_social"
-                                             data-container="body" data-toggle="popover" data-placement="bottom"
-                                             data-content="+55 67 99999-9999">
-                                    </div>
-                                    <p class="text-dark p_footer">MammaMya Pizza</p>
 
-                                </div>
 
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Contatos
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark" id="exampleModalLabel">Contatos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span data-bs-dismiss="modal">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body d-flex flex-column align-items-center">
+                                <!-- conteudo principal do POP -->
+                                <div class="footer_sociais">
+                                    <a href="https://www.instagram.com" class="text-decoration-none">
+                                        <img src="icones/instagram_black.png" alt="instagram"
+                                             class="icons_pop_social">
+                                    </a>
+                                    <a href="https://www.whatsapp.com/?lang=pt_br" class="text-decoration-none">
+                                        <img src="icones/whatsapp_preto.png" alt="whatsapp"
+                                             class="icons_pop_social">
+                                    </a>
+                                    <a href="https://twitter.com" class="text-decoration-none"> <img
+                                            src="icones/twitter_blaack.png" alt="twitter" class="icons_pop_social">
+                                    </a>
+                                    <img src="icones/telefone_blaack.png" class="icons_pop_social"
+                                         data-container="body" data-toggle="popover" data-placement="bottom"
+                                         data-content="+55 67 99999-9999">
                                 </div>
+                                <p class="text-dark p_footer">MammaMya Pizza</p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
-                </li>
+                </div>
             </ul>
-            <div class="d-flex flex-column align-items-center phone">
-                <p class="nav_telefone">Telefone</p>
-                <p class="nav_num_telefone">+55 (67) 99999-9999</p>
-            </div>
         </div>
     </nav>
 
@@ -197,12 +188,12 @@
         M & M
     </div>
 
-    <div class="">
+    <div>
         <button class="order-now">Peça Agora</button>
     </div>
 </section>
 
-<h2 class="part_5_h2">Famosinhas da Casa</h2>
+<h2 class="part_5_h2 d-flex justify-content-center">Famosinhas da Casa</h2>
 <hr class="hr_style">
 
 <div class="card-group gap-3 p-5">
@@ -247,10 +238,11 @@
     <button class="select-options">Selecionar Opções</button>
 </section>
 
-<ul class="nav nav-pills mb-3 justify-content-center m-5" id="pills-tab" role="tablist">
+<ul class="nav nav-pills justify-content-center m-5 mb-3" id="pills-tab" role="tablist">
     <li class="nav-item" role="presentation">
         <button class="nav-link active btn-danger text-dark" id="pills-pizza-tab" data-bs-toggle="pill"
-                data-bs-target="#pills-pizza" type="button" role="tab" aria-controls="pills-pizza" aria-selected="true">
+                data-bs-target="#pills-pizza" type="button" role="tab" aria-controls="pills-pizza"
+                aria-selected="true">
             Pizza
         </button>
     </li>
@@ -273,8 +265,9 @@
         </button>
     </li>
 </ul>
-<div class="tab-content d-flex justify-content-center " id="pills-tabContent">
-    <div class="tab-pane fade show active img-tabs" id="pills-pizza" role="tabpanel" aria-labelledby="pills-pizza-tab">
+<div class="tab-content d-flex justify-content-center" id="pills-tabContent">
+    <div class="tab-pane fade show active img-tabs" id="pills-pizza" role="tabpanel"
+         aria-labelledby="pills-pizza-tab">
         <img class="img-fluid rounded" src="Imagens/pizzaum.jpg" alt="pizza">
         <img class="img-fluid rounded" src="Imagens/pizzadois.jpg" alt="pizza">
         <img class="img-fluid rounded" src="Imagens/pizzaquatro.jpg" alt="">
